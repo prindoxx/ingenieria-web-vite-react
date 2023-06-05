@@ -1,9 +1,12 @@
 import React from "react";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
+import Footer from "./Footer";
+
 
 function Contacto() {
     return (
+        <>
         <section class="contact-box">
             <div class="contact-form">
                 <h2>Contáctanos</h2>
@@ -21,6 +24,8 @@ function Contacto() {
                 </form>
             </div>
         </section>
+        <Footer/>
+        </>
     )
 }
 
