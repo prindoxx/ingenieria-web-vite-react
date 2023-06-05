@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@media screen and (max-width: 1010px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(202, 209, 195);
+  }
+}
+@media screen and (max-width: 768px) {
+  img#xd {
+    width: 100%;
+    height: auto;
+    /* Anula los estilos aplicados a la ID en pantallas pequeñas */
+    /* Puedes dejarlo vacío o establecer los estilos que deseas que se apliquen en pantallas pequeñas */
+  }
+}
+@media screen and (max-width: 820px) {
+  .topnav li:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 820px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+  }
+  .topnav.responsive .search-bar {
+    display: flex;
+  }
+}
+@media screen and (max-width: 990px) {
+  .imagen-derecha {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .imagen-derecha {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=main.css.map */
