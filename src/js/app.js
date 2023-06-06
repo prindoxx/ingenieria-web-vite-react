@@ -45,3 +45,4 @@ function hamburger() {
     x.removeClass("responsive");
   }
 }
+export default hamburger;
