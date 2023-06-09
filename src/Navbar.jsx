@@ -1,7 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+    useEffect(() => {
+        const handleScroll = () => {
+          const navbar = document.getElementById("navbar");
+          const sticky = navbar.offsetTop;
+    
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
     const [responsive, setResponsive] = useState(false);
 
     const handleHamburgerClick = () => {
