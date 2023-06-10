@@ -1,0 +1,42 @@
+[   
+    {
+        "foto": "src/images/00003-2585076305-pablox_light___.png",
+        "nombre": "Pablo Ortiz",
+        "correo": "pablox@gmail.com",
+        "numero": "+56 9 1234 7652",
+        "edad": 22,
+        "sexo": "Masculino",
+        "nacimiento": "01/01/1298",
+        "nacionalidad": "Nigeria"
+    },
+    {
+        "foto": "src/images/21925_401930313212487_1671127705_n.png",
+        "nombre": "Ivan Galaz",
+        "correo": "ivam@gmail.com",
+        "numero": "+56 9 4234 7652",
+        "edad": 44,
+        "sexo": "Femenino",
+        "nacimiento": "01/01/1938",
+        "nacionalidad": "Chilena"
+    },
+    {
+        "foto":"src/images/Screenshot_12.png",
+        "nombre": "Nicolas Brevis",
+        "correo": "nivothemax@gmail.com",
+        "numero": "+56 9 1234 5343",
+        "edad": 22,
+        "sexo": "Masculino",
+        "nacimiento": "06/01/1698",
+        "nacionalidad": "Griega"
+    },
+    {
+        "foto": "src/images/image.png",
+        "nombre": "Darien Pacheco",
+        "correo": "darien@gmail.com",
+        "numero": "+56 9 3453 7652",
+        "edad": 12,
+        "sexo": "Femenino",
+        "nacimiento": "01/10/1998",
+        "nacionalidad": "Boliviana"
+    }
+]

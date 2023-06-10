@@ -24,41 +24,41 @@ function Home() {
                 <div className="carousel-inner">
                     <div className="item active">
                         <div className="d-flex justify-content-center align-items-center">
-                            <a href="producto.html">
+                        <Link to='/Producto'>
                                 <img src={imagenes.medi1} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img src={imagenes.vitamin2} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img src={imagenes.vitamin3} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img src={imagenes.vitamin} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img src={imagenes.hot} />
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -85,9 +85,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.medi1} />
-                            </a>
+                            </Link>
 
                             <p>
                                 <div class="desc-producto">
@@ -105,9 +105,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.vitamin} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -124,9 +124,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.hot} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -143,9 +143,9 @@ function Home() {
                         <div class="col-sm-6 col-md-6 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.vitamin2} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -163,9 +163,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.vitamin3} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -194,9 +194,9 @@ function Home() {
                         <div class="col-sm-12 col-md-6 my-4">
 
 
-                            <a href="farmacias.html">
+                            <Link to='/Farmacias'>
                                 <img src={imagenes.mapa} alt="Descripción de la imagen" class="img-fluid" />
-                            </a>
+                            </Link>
 
                         </div>
 
@@ -210,9 +210,9 @@ function Home() {
 
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.hipoglos} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -228,9 +228,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.medi3} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -246,9 +246,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.centrum} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -264,9 +264,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.medi2} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>
@@ -283,9 +283,9 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
 
-                            <a href="producto.html">
+                            <Link to='/Producto'>
                                 <img id="xd" src={imagenes.panales} />
-                            </a>
+                            </Link>
                             <p>
                                 <div class="desc-producto">
                                     <span>Titulo</span>

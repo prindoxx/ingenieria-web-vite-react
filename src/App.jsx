@@ -5,7 +5,6 @@ import './main.css'
 import { Link, Route, Routes } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import imagenes from "./imagenes";
-
 import Contacto from './Contacto'
 import Farmacias from './Farmacias'
 import Home from './Home'
