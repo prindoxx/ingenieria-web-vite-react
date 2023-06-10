@@ -7,9 +7,20 @@ import 'bootstrap/dist/css/bootstrap.css';
 import imagenes from "./imagenes";
 
 import Contacto from './Contacto'
+import Farmacias from './Farmacias'
 import Home from './Home'
 import Navbar from './Navbar';
-
+import Favoritos from './Favoritos';
+import Login from './Login';
+import Medicamentos from './Medicamentos';
+import Noencontrado from './Noencontrado';
+import Noticias from './Noticias';
+import Perfil from './Perfil';
+import Producto from './Producto';
+import Recuperarcontraseña from './Recuperarcontraseña';
+import Redessociales from './Redessociales';
+import Registrarse from './Registrarse';
+import Sobrenosotros from './Sobrenosotros';
 
 
 function App() {
@@ -22,6 +33,18 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contacto' element={<Contacto />} />
+        <Route path='/farmacias' element={<Farmacias />} />
+        <Route path='/Favoritos' element={<Favoritos />} />
+        <Route path='/Login' element={<Login />} />
+        <Route path='/Medicamentos' element={<Medicamentos />} />
+        <Route path='/sobrenosotros' element={<Sobrenosotros/>}/>
+        <Route path='/Noencontrado' element={<Noencontrado />} />
+        <Route path='/Noticias' element={<Noticias />} />
+        <Route path='/Perfil' element={<Perfil />} />
+        <Route path='/Producto' element={<Producto />} />
+        <Route path='/Recuperarcontraseña' element={<Recuperarcontraseña />} />
+        <Route path='/Redessociales' element={<Redessociales />} />
+        <Route path='/Registrarse' element={<Registrarse />} />
       </Routes>
     </div>
   )

@@ -33,7 +33,7 @@ function Home() {
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
                             <a href="producto.html">
-                                <img src={imagenes.medi1} />
+                                <img src={imagenes.vitamin2} />
                             </a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ function Home() {
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
                             <a href="producto.html">
-                                <img src={imagenes.medi1} />
+                                <img src={imagenes.vitamin3} />
                             </a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ function Home() {
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
                             <a href="producto.html">
-                                <img src={imagenes.medi1} />
+                                <img src={imagenes.vitamin} />
                             </a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ function Home() {
                     <div className="item">
                         <div className="d-flex justify-content-center align-items-center">
                             <a href="producto.html">
-                                <img src={imagenes.medi1} />
+                                <img src={imagenes.hot} />
                             </a>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.vitamin} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -125,7 +125,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.hot} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -144,7 +144,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.vitamin2} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -164,7 +164,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.vitamin3} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -195,7 +195,7 @@ function Home() {
 
 
                             <a href="farmacias.html">
-                                <img src={imagenes.medi1} alt="Descripción de la imagen" class="img-fluid" />
+                                <img src={imagenes.mapa} alt="Descripción de la imagen" class="img-fluid" />
                             </a>
 
                         </div>
@@ -211,7 +211,7 @@ function Home() {
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" id="catalogo-li">
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.hipoglos} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -229,7 +229,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.medi3} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -247,7 +247,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.centrum} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -265,7 +265,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.medi2} />
                             </a>
                             <p>
                                 <div class="desc-producto">
@@ -284,7 +284,7 @@ function Home() {
 
 
                             <a href="producto.html">
-                                <img id="xd" src={imagenes.medi1} />
+                                <img id="xd" src={imagenes.panales} />
                             </a>
                             <p>
                                 <div class="desc-producto">
