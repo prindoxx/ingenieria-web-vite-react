@@ -102,6 +102,7 @@ function Perfil() {
     traerDatos();
   }, []);
   return (
+    <>
     <div class="container">
       <div class="perfil">
         <div class="info-perfil" id="res">
@@ -224,6 +225,8 @@ function Perfil() {
         </div>
       </div>
     </div>
+          <Footer/>
+          </>
   );
 }
 

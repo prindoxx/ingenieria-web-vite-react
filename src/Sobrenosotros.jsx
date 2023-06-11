@@ -80,6 +80,7 @@ function Sobrenosotros() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

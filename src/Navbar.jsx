@@ -50,14 +50,14 @@ function Navbar() {
                     className="material-symbols-outlined rigth">
                     account_circle
                 </span>Log in</Link></li>
-                <li id="header1" className="search-bar"><Link to='/'><span className="material-symbols-outlined lupa">
+                <li id="header1" className="search-bar"><Link to='/Noencontrado'><span className="material-symbols-outlined lupa">
                     search
                 </span></Link><input className="barra" type="text" placeholder="Search.." /></li>
                 <a href="javascript:void(0);" className="icon" onClick={handleHamburgerClick}>
                     <span className="material-symbols-outlined">menu</span>
                 </a>
 
-                {/* Resto de tu contenido del navbar */}
+            
             </ul>
 
         </nav>

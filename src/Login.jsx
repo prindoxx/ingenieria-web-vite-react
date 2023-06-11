@@ -18,6 +18,7 @@ function Login() {
             <p>¿No tienes una cuenta? <Link to='/Registrarse'>Registrate</Link></p>
             <p>¿Haz olvidado tu contraseña? <Link to='/Recuperarcontraseña'>Recuperar la contraseña</Link></p>
         </div>
+        <Footer/>
         </>
     )
 }

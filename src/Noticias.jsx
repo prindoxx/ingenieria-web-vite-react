@@ -144,7 +144,7 @@ function Noticias(){
       
     </div>
   </div> 
-        
+  <Footer/>
         </>
     )
 }

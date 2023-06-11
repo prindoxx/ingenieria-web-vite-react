@@ -34,6 +34,7 @@ function Redessociales(){
                 </div>
             </div>
         </div>
+        <Footer/>
         </>
     )
 }
