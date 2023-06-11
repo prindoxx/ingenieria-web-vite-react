@@ -200,20 +200,20 @@ function Perfil() {
             <div class="imagenes-favoritos">
               <div class="row justify-content-center">
                 <div class="col-sm-4  ">
-                  <a href="producto.html" id="imagen-fav">
+                <Link to="/Producto" class="imagen-fav">
                     <img src={imagenes.medi3} alt="Favorito 1" />
-                  </a>
+                </Link>
                 </div>
 
                 <div class="col-sm-4  ">
-                  <a href="producto.html" id="imagen-fav">
+                <Link to="/Producto" class="imagen-fav">
                     <img src={imagenes.hot} alt="Favorito 2" />
-                  </a>
+                </Link>
                 </div>
                 <div class="col-sm-4  ">
-                  <a href="producto.html" id="imagen-fav">
+                <Link to="/Producto" class="imagen-fav">
                     <img src={imagenes.centrum} alt="Favorito 3" />
-                  </a>
+                </Link>
                 </div>
               </div>
             </div>
