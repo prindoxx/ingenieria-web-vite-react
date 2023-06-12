@@ -1,6 +1,5 @@
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import imagenes from "./imagenes";
 import React, { useState, useEffect } from "react";
@@ -225,7 +224,6 @@ function Perfil() {
         </div>
       </div>
     </div>
-          <Footer/>
           </>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import imagenes from './imagenes'
-import Footer from "./Footer";
 
 
 
@@ -101,7 +100,6 @@ function Noencontrado() {
           </div>
         </div>
       </div>
-      <Footer/>
     </>
   )
 }

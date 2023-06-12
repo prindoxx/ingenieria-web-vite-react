@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import imagenes from "./imagenes";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import Footer from "./Footer";
 
 function Home() {
     const casa = '/'
@@ -301,7 +300,6 @@ function Home() {
                     </div>
                 </div >
             </div >
-            <Footer/>
 
         </>
     )

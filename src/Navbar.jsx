@@ -1,16 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const [responsive, setResponsive] = useState(false);
 
+    const [responsive, setResponsive] = useState(false);
+    const [sticky, setSticky] = useState(false);
+  
     const handleHamburgerClick = () => {
-        setResponsive(!responsive);
+      setResponsive(!responsive);
     };
+  
+    useEffect(() => {
+      const navbar = document.getElementById("navbar");
+      const offsetTop = navbar.offsetTop;
+  
+      const handleScroll = () => {
+        setSticky(window.pageYOffset >= offsetTop);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
     return (
         <nav>
-            <ul id="navbar" className={`topnav ${responsive ? 'responsive' : ''}`}>
+            <ul  id="navbar" className={`topnav ${responsive ? 'responsive' : ''} ${sticky ? 'sticky' : ''}`}>
 
                 <li id="header1"><Link to='/'><span className="material-symbols-outlined">
                     home

@@ -1,7 +1,6 @@
 import React from "react";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import Footer from "./Footer";
 
 
 function Contacto() {
@@ -24,7 +23,6 @@ function Contacto() {
                 </form>
             </div>
         </section>
-        <Footer/>
         </>
     )
 }

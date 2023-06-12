@@ -20,7 +20,7 @@ import Recuperarcontraseña from './Recuperarcontraseña';
 import Redessociales from './Redessociales';
 import Registrarse from './Registrarse';
 import Sobrenosotros from './Sobrenosotros';
-
+import Footer from './Footer';
 
 function App() {
   return (
@@ -45,7 +45,9 @@ function App() {
         <Route path='/Redessociales' element={<Redessociales />} />
         <Route path='/Registrarse' element={<Registrarse />} />
       </Routes>
+      <Footer/>
     </div>
+    
   )
 }
 

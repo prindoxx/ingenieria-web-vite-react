@@ -1,7 +1,6 @@
 import React from "react";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import Footer from "./Footer";
 import imagenes from "./imagenes";
 
 
@@ -144,7 +143,6 @@ function Noticias(){
       
     </div>
   </div> 
-  <Footer/>
         </>
     )
 }
