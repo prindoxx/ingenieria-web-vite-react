@@ -1,7 +1,7 @@
 import { useState } from 'react'
 //import './App.css'
 import './styles.css'
-import './main.css'
+import './scss/main.css'
 import { Link, Route, Routes } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import imagenes from "./imagenes";
