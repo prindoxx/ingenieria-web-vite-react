@@ -74,7 +74,7 @@ Domingo 2 de Abril, 2023
 - Producto no encontrado.
 - Medicamentos.
 
-## Entregas EP3:
+## Entregas EP3
 
 - La página web está desarollada en React + Vite.
 - Los datos creados a traves de JSON se muestran nn la consola de la pestaña "Registrarse".
