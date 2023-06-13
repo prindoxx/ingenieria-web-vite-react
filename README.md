@@ -73,3 +73,10 @@ Domingo 2 de Abril, 2023
 - Recuperar contraseña.
 - Producto no encontrado.
 - Medicamentos.
+
+## Entregas EP3:
+
+- La página web está desarollada en React + Vite.
+- Los datos creados a traves de JSON se muestran nn la consola de la pestaña "Registrarse".
+- Los datos cargados se muestran en la pestaña "Perfil", y se pueden ver presionando el boton siguiente, tienen datos como el nombre, foto, nacionalidad, edad, numero de telefono y correo electrónico, etc. El archivo JSON de donde se extraen los datos se encuentran en la carpeta public en un archivo llamado "perfil.json".
+- Las validaciones de los formularios y los mensajes de retroalimentación se encuentran en las pestañas "Registrarse", "Login", "Recuperarcontraseña".
