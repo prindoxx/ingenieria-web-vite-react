@@ -1,14 +1,33 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
+import ReCAPTCHA from "react-google-recaptcha";
 import './styles.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function Registrarse() {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const [captchaValido, cambiarCaptchaValido] = useState(null);
+  const captcha = useRef(null);
+  
+  const onChange = () => {
+    if(captcha.current.getValue()){
+      cambiarCaptchaValido(true);
+    }
+    
+  };
 
   const onSubmit = (data) => {
-    console.log(JSON.stringify(data));
+    if(captcha.current.getValue()){
+      cambiarCaptchaValido(true);
+      console.log(JSON.stringify(data));
+      alert('Te has registrado correctamente')
+  }else{
+    cambiarCaptchaValido(false);
+  }
+    
   };
+
+
   const mystyle = {
     float: "right",
     marginBottom: "5px"
@@ -54,6 +73,14 @@ function Registrarse() {
               })} />
               {errors.contrasena && <p style={mystyle2}>{errors.contrasena.message}</p>}
             </div>
+            <div className="recaptcha">
+            <ReCAPTCHA
+                ref={captcha}
+                sitekey="6LfLZcgmAAAAALn1v9gltEqVI9BWc40EfpPqgXhv"
+                onChange={onChange}
+            />,
+            </div>
+            {captchaValido === false && <div className="error-captcha">Por favor acepta el captcha</div>}
             <button id="registrarse" type="submit">Registrarse</button>
           </form>
         </div>

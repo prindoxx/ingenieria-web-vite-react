@@ -853,3 +853,10 @@ h1#titulo-navbar{
 label.error{
     color:red;
 }
+
+.error-captcha {
+	color: red;
+	margin-bottom: 20px;
+    text-align: center;
+    font-size: 150%;
+}
