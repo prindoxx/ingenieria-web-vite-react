@@ -1,28 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import imagenes from "./imagenes";
+import { getFavoritosRequest } from "./api/favoritos.api";
 
 function Favoritos(){
+
+    const [favoritos, setFavoritos] = useState([])
+
+    useEffect(() => {
+        async function loadFavoritos(){
+            const response = await getFavoritosRequest()
+            setFavoritos(response.data)
+        }
+        loadFavoritos()
+    },[])
     return(
         <>
-            <section class="favoritas">
-                <h2>Mis Favoritos</h2>
-                <div class="clase-favoritas">
-                    <div class="clase-favorita">
-                        <img src={imagenes.hipoglos} alt="Imagen 1"/>
-                        <p>Descripción <a href="otra-pagina.html" class="ver-mas">Ver más</a></p>
+        <div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1>favoritos</h1>
+            {
+                favoritos.map(favoritos => (
+                    <div>
+                        <h2>{favoritos.titulo}</h2>
+                        <p>{favoritos.descripcion}</p>
+                        <span>{favoritos.createdAt}</span>
                     </div>
-                    <div class="clase-favorita">
-                        <img src={imagenes.vitamin} alt="Imagen 2"/>
-                        <p>Descripción<a href="otra-pagina.html" class="ver-mas">Ver más</a></p>
-                    </div>
-                    <div class="clase-favorita">
-                        <img src={imagenes.hot} alt="Imagen 3"/>
-                        <p>Descripción<a href="otra-pagina.html" class="ver-mas">Ver más</a></p>
-                    </div>
-                </div>
-            </section>  
+                ))
+            }
+            
+        </div>
         </>  
     )
 }
