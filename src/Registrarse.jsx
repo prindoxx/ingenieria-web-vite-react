@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import './styles.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import $ from 'jquery'
@@ -10,6 +11,16 @@ import { useForm } from "react-hook-form";
 function Registrarse() {
 
   const { register, formState: { errors }, handleSubmit } = useForm();
+  const [captchaValido, cambiarCaptchaValido] = useState(null);
+  const captcha = useRef(null);
+  const navigate = useNavigate();
+
+  const onChange = () => {
+    if(captcha.current.getValue()){
+      cambiarCaptchaValido(true);
+    }
+    
+  };
 
   const onSubmit = () => {
     event.preventDefault();
@@ -18,27 +29,44 @@ function Registrarse() {
     var dato3 = $("#name").val();
     console.log(dato1)
 
+    if(captcha.current.getValue()){
+      cambiarCaptchaValido(true);
+    }else{
+    cambiarCaptchaValido(false);
+    }
+
     var url = "http://localhost:4000";
-    $.ajax({
-      data: JSON.stringify({ "name": dato3, "email": dato1, "password": dato2 }),
-      contentType: "application/json",
-      type: "POST",
-      dataType: "json",
-      url: url + "/registro",
-    })
-      .done(function (data, textStatus, jqXHR) {
-        console.log(data); // Ejemplo de cómo mostrar la respuesta en la consola
-        if (data.error) {
-          console.log("fallaste ctm")
-        } else {
-          console.log("wena registrado")
-        }
-      })
-      .fail(function (jqXHR, textStatus, errorThrown) {
-        if (console && console.log) {
-          console.log("La solicitud a fallado: " + textStatus);
-        }
-      });
+    if(captcha.current.getValue()){
+      cambiarCaptchaValido(true);
+    
+        $.ajax({
+          data: JSON.stringify({ "name": dato3, "email": dato1, "password": dato2 }),
+          contentType: "application/json",
+          type: "POST",
+          dataType: "json",
+          url: url + "/registro",
+          
+        })
+        .done(function (data, textStatus, jqXHR) {
+          console.log(data); // Ejemplo de cómo mostrar la respuesta en la consola
+          if (data.error) {
+            console.log("fallaste ctm")
+        
+          } else {
+            alert('Te has registrado correctamente')
+            console.log("wena registrado")
+            navigate("/Perfil")
+          }
+        })
+        .fail(function (jqXHR, textStatus, errorThrown) {
+          if (console && console.log) {
+            console.log("La solicitud a fallado: " + textStatus);
+          }
+        });
+    }else{
+      cambiarCaptchaValido(false);
+    }
+      
   }
   return (
     <>
@@ -71,8 +99,15 @@ function Registrarse() {
               })} />
               {errors.password && <p>{errors.password.message}</p>}
             </div>
-            <button type="submit" className="btn btn-success">Registrarse</button>
-
+            <div className="recaptcha">
+            <ReCAPTCHA
+                ref={captcha}
+                sitekey="6LfLZcgmAAAAALn1v9gltEqVI9BWc40EfpPqgXhv"
+                onChange={onChange}
+            />,
+            </div>
+            {captchaValido === false && <div className="error-captcha">Por favor acepta el captcha</div>}
+            <button type="submit" className="btn btn-success" onSubmit={handleSubmit}>Registrarse</button>
           </form>
         </div>
 
