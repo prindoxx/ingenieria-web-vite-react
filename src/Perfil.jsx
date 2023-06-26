@@ -219,6 +219,9 @@ function Perfil() {
             </div>
           </div>
           <Link to="/Favoritos" class="ver-todos">
+            Agregar algo xd
+          </Link>
+          <Link to="/ListaFavoritos" class="ver-todos">
             Ver todos
           </Link>
         </div>

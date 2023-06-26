@@ -21,33 +21,40 @@ import Redessociales from './Redessociales';
 import Registrarse from './Registrarse';
 import Sobrenosotros from './Sobrenosotros';
 import Footer from './Footer';
+import ListaFavoritos from './ListaFavoritos';
+import { FavoritoContextProvider } from './context/FavoritoContext';
 
 function App() {
   return (
-    <div className='App'>
+    <FavoritoContextProvider>
 
-      <header>
-        <Navbar/>
-      </header>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/contacto' element={<Contacto />} />
-        <Route path='/farmacias' element={<Farmacias />} />
-        <Route path='/Favoritos' element={<Favoritos />} />
-        <Route path='/Login' element={<Login />} />
-        <Route path='/Medicamentos' element={<Medicamentos />} />
-        <Route path='/sobrenosotros' element={<Sobrenosotros/>}/>
-        <Route path='/Noencontrado' element={<Noencontrado />} />
-        <Route path='/Noticias' element={<Noticias />} />
-        <Route path='/Perfil' element={<Perfil />} />
-        <Route path='/Producto' element={<Producto />} />
-        <Route path='/Recuperarcontraseña' element={<Recuperarcontraseña />} />
-        <Route path='/Redessociales' element={<Redessociales />} />
-        <Route path='/Registrarse' element={<Registrarse />} />
-      </Routes>
-      <Footer/>
-    </div>
-    
+      <div className='App'>
+
+        <header>
+          <Navbar />
+        </header>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/contacto' element={<Contacto />} />
+          <Route path='/farmacias' element={<Farmacias />} />
+          <Route path='/Favoritos' element={<Favoritos />} />
+          <Route path='/edit/:id' element={<Favoritos />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='/Medicamentos' element={<Medicamentos />} />
+          <Route path='/sobrenosotros' element={<Sobrenosotros />} />
+          <Route path='/Noencontrado' element={<Noencontrado />} />
+          <Route path='/Noticias' element={<Noticias />} />
+          <Route path='/Perfil' element={<Perfil />} />
+          <Route path='/Producto' element={<Producto />} />
+          <Route path='/Recuperarcontraseña' element={<Recuperarcontraseña />} />
+          <Route path='/Redessociales' element={<Redessociales />} />
+          <Route path='/Registrarse' element={<Registrarse />} />
+          <Route path='/ListaFavoritos' element={<ListaFavoritos />} />
+        </Routes>
+        <Footer />
+      </div>
+    </FavoritoContextProvider>
+
   )
 }
 

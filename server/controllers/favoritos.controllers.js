@@ -7,6 +7,15 @@ export const getFavoritos = async (req, res) => {
     res.json(result);
 }
 
+export const getFavorito = async (req, res) => {
+    const [result] = await pool.query("SELECT * FROM favoritos WHERE id = ?", [
+        req.params.id,
+    ]);
+    if (result.length === 0)
+        return res.status(404).json({ message: "Favorito no encontrado" });
+    res.json(result);
+}
+
 export const createFavoritos = async (req, res) => {
     const { titulo, descripcion } = req.body;
     const [result] = await pool.query(

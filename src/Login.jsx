@@ -30,6 +30,7 @@ function Login() {
                     console.log("fallaste ctm")
                 } else {
                     console.log("wena logueado")
+                    alert("Logueado")
                 }
             })
             .fail(function (jqXHR, textStatus, errorThrown) {
