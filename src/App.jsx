@@ -22,6 +22,7 @@ import Registrarse from './Registrarse';
 import Sobrenosotros from './Sobrenosotros';
 import Footer from './Footer';
 import ListaFavoritos from './ListaFavoritos';
+import Admin from './Admin';
 import { FavoritoContextProvider } from './context/FavoritoContext';
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Route path='/Redessociales' element={<Redessociales />} />
           <Route path='/Registrarse' element={<Registrarse />} />
           <Route path='/ListaFavoritos' element={<ListaFavoritos />} />
+          <Route path='/Admin' element={<Admin />} />
         </Routes>
         <Footer />
       </div>

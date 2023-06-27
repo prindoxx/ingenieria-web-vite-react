@@ -50,7 +50,7 @@ app.post("/login",jsonParser,(req:any, res:any) => {
             res.send(JSON.stringify({"mensaje": "Email y/o Password no son correctos!!", "error": true }) );
             return;
         } else {
-            res.send(JSON.stringify({"mensaje": "Logueo exitoso!!", "error": false }) );
+            res.send(JSON.stringify({"mensaje": "Logueo exitoso!!", "error": false, datos:results[0].tipo }) );
             return
         }
     });

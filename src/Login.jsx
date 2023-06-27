@@ -10,7 +10,7 @@ import { useForm } from "react-hook-form";
 function Login() {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
-    
+    const navigate = useNavigate();
     
     const onSubmit = () => {
         event.preventDefault();
@@ -27,14 +27,19 @@ function Login() {
             url: url + "/login",
         })
             .done(function (data, textStatus, jqXHR) {
-                console.log(data); // Ejemplo de cómo mostrar la respuesta en la consola
                 if (data.error) {
-                    console.log("fallaste ctm")
-                } else {
-                    console.log("wena logueado")
-                    alert("Logueado")
-                }
-            })
+                    console.log("Inicio fallido");
+                    } else {
+                        console.log("Inicio de sesion exitoso");
+                        console.log(data);
+                    alert("Inicio de sesion exitoso");
+                    if (data.datos === "admin") {
+                        navigate("/admin"); 
+                    } else if (data.datos === "usuario") {
+                        navigate("/"); 
+                    }
+                    }
+                })
             .fail(function (jqXHR, textStatus, errorThrown) {
                 if (console && console.log) {
                     console.log("La solicitud a fallado: " + textStatus);
