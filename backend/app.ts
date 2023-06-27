@@ -79,3 +79,14 @@ app.post("/registro",jsonParser,(req:any, res:any) => {
     });
     
 });
+
+app.delete("/eliminarUsuario",jsonParser,(req:any, res:any) => {
+    let email=req.body.email;
+    
+    connection.query("DELETE FROM `login` WHERE email=?",[email],function(error:any,results:any,fields:any){
+        if (error) 
+        throw error;
+        res.send( JSON.stringify({"mensaje":"Se ha encontrado el email","error":false} ));
+        return;
+    });
+});
