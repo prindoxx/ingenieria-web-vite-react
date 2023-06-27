@@ -6,7 +6,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 
-
 function Login() {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
