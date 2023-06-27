@@ -23,7 +23,7 @@ function Home() {
                 <div className="carousel-inner">
                     <div className="item active">
                         <div className="d-flex justify-content-center align-items-center">
-                        <Link to='/Producto'>
+                            <Link to='/Producto'>
                                 <img src={imagenes.medi1} />
                             </Link>
                         </div>

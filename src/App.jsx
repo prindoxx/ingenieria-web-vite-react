@@ -2,7 +2,7 @@ import { useState } from 'react'
 //import './App.css'
 import './styles.css'
 import './scss/main.css'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import imagenes from "./imagenes";
 import Contacto from './Contacto'

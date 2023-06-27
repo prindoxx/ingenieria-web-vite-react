@@ -72,43 +72,46 @@ function Registrarse() {
     <>
       <div className="d-flex justify-content-center align-items-center">
         <div>
-          <h2>Registrarse</h2>
-          <form action="" onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-3">
-              <label htmlFor="name">Nombre: </label>
-              <input id="name" type="text" name="name" placeholder="Brayan" className="form-control rounded-0" {...register('name', {
-                required: 'El campo nombre es obligatorio'
-              })} />
-              {errors.name && <p>{errors.name.message}</p>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="email">Email: </label>
-              <input id="email" type="email" name="email" placeholder="Example@mail.com" className="form-control rounded-0" {...register('email', {
-                required: 'El campo correo es obligatorio',
-                pattern: {
-                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: 'Ingresa un correo electrónico válido'
-                }
-              })} />
-              {errors.email && <p>{errors.email.message}</p>}
-            </div>
-            <div className="mb-3">
-              <label htmlFor="password">Contraseña: </label>
-              <input id="password" type="password" name="password" placeholder="Contraseña" className="form-control rounded-0" {...register('password', {
-                required: 'El campo contraseña es obligatorio'
-              })} />
-              {errors.password && <p>{errors.password.message}</p>}
-            </div>
-            <div className="recaptcha">
-            <ReCAPTCHA
-                ref={captcha}
-                sitekey="6LfLZcgmAAAAALn1v9gltEqVI9BWc40EfpPqgXhv"
-                onChange={onChange}
-            />,
-            </div>
-            {captchaValido === false && <div className="error-captcha">Por favor acepta el captcha</div>}
-            <button type="submit" className="btn btn-success" onSubmit={handleSubmit}>Registrarse</button>
-          </form>
+          
+          
+            <form className= "contact-form" action="" onSubmit={handleSubmit(onSubmit)}>
+              <h2>Registrarse</h2>
+              <div className="mb-3">
+                <label htmlFor="name">Nombre: </label>
+                <input id="name" type="text" name="name" placeholder="Nombre" className="form-control rounded-0" {...register('name', {
+                  required: 'El campo nombre es obligatorio'
+                })} />
+                {errors.name && <p>{errors.name.message}</p>}
+              </div>
+              <div className="mb-3">
+                <label htmlFor="email">Email: </label>
+                <input id="email" type="email" name="email" placeholder="Example@mail.com" className="form-control rounded-0" {...register('email', {
+                  required: 'El campo correo es obligatorio',
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: 'Ingresa un correo electrónico válido'
+                  }
+                })} />
+                {errors.email && <p>{errors.email.message}</p>}
+              </div>
+              <div className="mb-3">
+                <label htmlFor="password">Contraseña: </label>
+                <input id="password" type="password" name="password" placeholder="Contraseña" className="form-control rounded-0" {...register('password', {
+                  required: 'El campo contraseña es obligatorio'
+                })} />
+                {errors.password && <p>{errors.password.message}</p>}
+              </div>
+              <div className="recaptcha">
+              <ReCAPTCHA
+                  ref={captcha}
+                  sitekey="6LfLZcgmAAAAALn1v9gltEqVI9BWc40EfpPqgXhv"
+                  onChange={onChange}
+              />,
+              </div>
+              {captchaValido === false && <div className="error-captcha">Por favor acepta el captcha</div>}
+              <button type="submit" id="registrarse" onSubmit={handleSubmit}>Registrarse</button>
+            </form>
+         
         </div>
 
       </div>

@@ -5,7 +5,12 @@ function Navbar() {
 
     const [responsive, setResponsive] = useState(false);
     const [sticky, setSticky] = useState(false);
-  
+    const [showNavbar, setShowNavbar] = useState(true);
+
+    if (!showNavbar) {
+        return null; // Si showNavbar es false, no se muestra el componente
+    }
+    
     const handleHamburgerClick = () => {
       setResponsive(!responsive);
     };

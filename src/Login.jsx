@@ -6,10 +6,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
 
+
 function Login() {
 
     const { register, formState: { errors }, handleSubmit } = useForm();
-
+    
+    
     const onSubmit = () => {
         event.preventDefault();
         var dato1 = $("#email").val();
@@ -47,8 +49,9 @@ function Login() {
         <>
             <div className="d-flex justify-content-center align-items-center">
                 <div>
-                    <h2>Iniciar sesión</h2>
-                    <form action="" onSubmit={handleSubmit(onSubmit)}>
+                <section class="contact-box">
+                    <form className= "contact-form" action="" onSubmit={handleSubmit(onSubmit)}>
+                        <h2>Iniciar sesión</h2>
                         <div className="mb-3">
                             <label htmlFor="email">Email: </label>
                             <input id="email" type="email" name="email" placeholder="Example@mail.com" className="form-control rounded-0" {...register('email', {
@@ -59,6 +62,7 @@ function Login() {
                                 }
                             })} />
                              {errors.email && <p>{errors.email.message}</p>}
+                             
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email">Contraseña: </label>
@@ -66,15 +70,18 @@ function Login() {
                                 required: 'El campo contraseña es obligatorio'
                             })} />
                             {errors.password && <p>{errors.password.message}</p>}
+                            <p>¿No tienes una cuenta? <Link to='/Registrarse'>Registrate</Link></p>
+                            <p>¿Haz olvidado tu contraseña? <Link to='/Recuperarcontraseña'>Recuperar la contraseña</Link></p>
                         </div>
-                        <button type="submit" className="btn btn-success">Iniciar sesión</button>
+                        <button type="submit" id="registrarse">Iniciar sesión</button>
 
                     </form>
+                    </section>
                 </div>
-
+                            
             </div>
-            <p>¿No tienes una cuenta? <Link to='/Registrarse'>Registrate</Link></p>
-            <p>¿Haz olvidado tu contraseña? <Link to='/Recuperarcontraseña'>Recuperar la contraseña</Link></p>
+            
+            
         </>
     )
 }

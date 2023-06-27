@@ -12,9 +12,9 @@ body{
     width: 100%;
 }
 
-#formulario{
+.formulario{
     text-align: center;
-    margin: 10em;
+    margin-top: 50px;
 }
 
 header{
@@ -518,6 +518,7 @@ div#mapa {
     border-radius: 10px;
     text-align: bottom;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
 }
   
 .contact-form h2 {
