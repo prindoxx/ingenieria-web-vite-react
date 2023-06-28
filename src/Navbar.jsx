@@ -57,6 +57,9 @@ function Navbar() {
                 <li id="header1"><Link to='/noticias'><span className="material-symbols-outlined">
                     medical_information
                 </span>Noticias</Link></li>
+                <li id="header1"><Link to='/ListaFavoritos'><span className="material-symbols-outlined">
+                    event_list
+                </span>Foro</Link></li>
 
                 <li className="iconos-derecha" id="header1"><Link className="active1 rigth"
                     to='/sobrenosotros'><span className="material-symbols-outlined rigth">

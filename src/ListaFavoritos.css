@@ -1,0 +1,49 @@
+.container {
+    margin: 20px;
+  }
+  
+  .titulo {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .lista-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .favorito {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .botones {
+    margin-top: 10px;
+    
+  }
+  
+  .eliminar-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .editar-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .eliminar-btn:hover,
+  .editar-btn:hover {
+    opacity: 0.8;
+  }
